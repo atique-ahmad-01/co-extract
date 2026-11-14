@@ -1,0 +1,85 @@
+{
+  "source_file": "samples/real/caltrans_cem4900_sample.pdf",
+  "project_name": {
+    "value": null,
+    "confidence": 0.9,
+    "source": null
+  },
+  "contract_number": {
+    "value": null,
+    "confidence": 0.9,
+    "source": null
+  },
+  "change_order_number": {
+    "value": null,
+    "confidence": 0.45,
+    "source": null
+  },
+  "date": {
+    "value": null,
+    "confidence": 0.9,
+    "source": null
+  },
+  "requested_by": {
+    "value": null,
+    "confidence": 0.35,
+    "source": null
+  },
+  "description": {
+    "value": "Update the project's LCAN to comply with the 2022 Construction General Permit (Order WQ 2022-0057-DWQ) and the MMBN Common SWPPP, and replace Section 13-13 of the Work Order Special Provisions with revised SS_13-13_N07-17-2025_LCAN.",
+    "confidence": 1.0,
+    "source": {
+      "quote": "Update the project's LCAN to comply with the 2022 CGP (Order WQ",
+      "page": 1,
+      "start": 1167,
+      "end": 1230,
+      "match": "exact"
+    }
+  },
+  "amount": {
+    "value": null,
+    "confidence": 0.45,
+    "source": null
+  },
+  "schedule_impact_days": {
+    "value": 0,
+    "confidence": 0.54,
+    "source": {
+      "quote": "No time adjustment will be made since the work described in this change order did not result in a critical delay.",
+      "page": 1,
+      "start": 2613,
+      "end": 2726,
+      "match": "exact"
+    }
+  },
+  "approval_status": {
+    "value": "pending",
+    "confidence": 0.54,
+    "source": {
+      "quote": "ENGINEER APPROVAL BY",
+      "page": 2,
+      "start": 5495,
+      "end": 5515,
+      "match": "exact"
+    }
+  },
+  "needs_review": true,
+  "review_reasons": [
+    "requested_by: extractor returned null but a pattern match found 'Contractor Engineer'",
+    "change_order_number: required field missing",
+    "amount: required field missing",
+    "neither project_name nor contract_number found",
+    "schedule_impact_days: low confidence (0.54)",
+    "approval_status: low confidence (0.54)"
+  ],
+  "meta": {
+    "pipeline_version": "0.1.0",
+    "mode": "llm",
+    "provider": "anthropic",
+    "model": "claude-opus-5-5",
+    "samples": 3,
+    "ingest": "pdf_text",
+    "chars": 5926,
+    "review_threshold": 0.6
+  }
+}

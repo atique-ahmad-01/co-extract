@@ -1,0 +1,14 @@
+{
+  "file": "samples/synthetic/co_03_ocr_noisy.txt",
+  "expected": {
+    "project_name": "Harbor Point Apartments Bldg C",
+    "contract_number": "HPA-22-0518",
+    "change_order_number": "CO-09",
+    "date": "2024-11-04",
+    "requested_by": "Coastal Living Partners LLC",
+    "description": "replace damaged sheathing north elevation siding",
+    "amount": 8410.00,
+    "schedule_impact_days": 0,
+    "approval_status": "approved"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "source_file": "samples/synthetic/co_04_email_pasted.txt",
+  "project_name": {
+    "value": "Westgate Retail Center",
+    "confidence": 0.9,
+    "source": {
+      "quote": "Pricing for added RTU curb adapters - Westgate Retail Center",
+      "page": 1,
+      "start": 144,
+      "end": 204,
+      "match": "exact"
+    }
+  },
+  "contract_number": {
+    "value": null,
+    "confidence": 0.9,
+    "source": null
+  },
+  "change_order_number": {
+    "value": "6",
+    "confidence": 0.667,
+    "source": {
+      "quote": "Please issue this as CO #6 on our mechanical sub.",
+      "page": 1,
+      "start": 334,
+      "end": 383,
+      "match": "exact"
+    }
+  },
+  "date": {
+    "value": "2025-01-09",
+    "confidence": 0.6,
+    "source": {
+      "quote": "Sent: Thursday, January 9, 2025 4:12 PM",
+      "page": 1,
+      "start": 46,
+      "end": 85,
+      "match": "exact"
+    }
+  },
+  "requested_by": {
+    "value": null,
+    "confidence": 0.6,
+    "source": null
+  },
+  "description": {
+    "value": "Add 4 additional curb adapters at RTU-3 through RTU-6, including material, labor, crane and rigging.",
+    "confidence": 1.0,
+    "source": {
+      "quote": "pricing for the 4 additional curb adapters at RTU-3 through RTU-6",
+      "page": 1,
+      "start": 234,
+      "end": 299,
+      "match": "exact"
+    }
+  },
+  "amount": {
+    "value": 9988.0,
+    "confidence": 1.0,
+    "source": {
+      "quote": "Total add .......................... $9,988",
+      "page": 1,
+      "start": 522,
+      "end": 565,
+      "match": "exact"
+    }
+  },
+  "schedule_impact_days": {
+    "value": null,
+    "confidence": 0.9,
+    "source": null
+  },
+  "approval_status": {
+    "value": "pending",
+    "confidence": 0.54,
+    "source": {
+      "quote": "Please issue this as CO #6 on our mechanical sub.",
+      "page": 1,
+      "start": 334,
+      "end": 383,
+      "match": "exact"
+    }
+  },
+  "needs_review": true,
+  "review_reasons": [
+    "approval_status: low confidence (0.54)"
+  ],
+  "meta": {
+    "pipeline_version": "0.1.0",
+    "mode": "llm",
+    "provider": "anthropic",
+    "model": "claude-opus-5-5",
+    "samples": 3,
+    "ingest": "text",
+    "chars": 692,
+    "review_threshold": 0.6
+  }
+}

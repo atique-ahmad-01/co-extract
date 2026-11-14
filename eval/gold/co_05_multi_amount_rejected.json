@@ -1,0 +1,14 @@
+{
+  "file": "samples/synthetic/co_05_multi_amount_rejected.txt",
+  "expected": {
+    "project_name": "Cedar Ridge Library Expansion",
+    "contract_number": "CRL-GC-2023-04",
+    "change_order_number": "11",
+    "date": "2025-05-20",
+    "requested_by": ["Fenwick Studio (Architect)", "Fenwick Studio"],
+    "description": "revise reading room skylight framing aluminum to steel",
+    "amount": 39875.00,
+    "schedule_impact_days": 14,
+    "approval_status": "rejected"
+  }
+}

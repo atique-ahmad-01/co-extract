@@ -1,0 +1,15 @@
+{
+  "file": "samples/synthetic/co_06_math_conflict.txt",
+  "expected": {
+    "project_name": "Mesa Verde Parking Structure",
+    "contract_number": "MV-PS-7781",
+    "change_order_number": "GP-1187-CO-03",
+    "date": "2025-03-04",
+    "requested_by": ["City of Mesa Verde Public Works", "City of Mesa Verde Public Works (Owner)"],
+    "description": "add 14 EV charging stub-outs Level 2 conduit feeder extensions",
+    "amount": 146250.00,
+    "schedule_impact_days": 7,
+    "approval_status": "pending"
+  },
+  "expect_needs_review": true
+}

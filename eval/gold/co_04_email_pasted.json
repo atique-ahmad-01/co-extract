@@ -1,0 +1,14 @@
+{
+  "file": "samples/synthetic/co_04_email_pasted.txt",
+  "expected": {
+    "project_name": "Westgate Retail Center",
+    "contract_number": null,
+    "change_order_number": "6",
+    "date": ["2025-01-09", null],
+    "requested_by": ["Tom Becker, Summit Mechanical", "Summit Mechanical", "Tom Becker"],
+    "description": "4 additional curb adapters RTU-3 through RTU-6",
+    "amount": 9988.00,
+    "schedule_impact_days": null,
+    "approval_status": ["pending", null]
+  }
+}

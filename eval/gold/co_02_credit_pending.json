@@ -1,0 +1,14 @@
+{
+  "file": "samples/synthetic/co_02_credit_pending.txt",
+  "expected": {
+    "project_name": "Lakeview Elementary School - Phase 2 Modernization",
+    "contract_number": "LV-ELEC-0392",
+    "change_order_number": "17",
+    "date": "2025-07-02",
+    "requested_by": ["Jenna Ruiz, Northshore Electric", "Northshore Electric", "Owner"],
+    "description": "delete auditorium dimming system replace with standard switching credit",
+    "amount": -10630.00,
+    "schedule_impact_days": -3,
+    "approval_status": "pending"
+  }
+}

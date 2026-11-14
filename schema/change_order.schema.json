@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "change_order.schema.json",
+  "title": "ChangeOrderExtraction",
+  "description": "One extracted construction change order. Every field is {value, confidence, source}; a field not present in the document has value null (never a guess). needs_review is true when any validation check fails or any field's confidence is below the review threshold.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "source_file", "project_name", "contract_number", "change_order_number", "date",
+    "requested_by", "description", "amount", "schedule_impact_days", "approval_status",
+    "needs_review", "review_reasons", "meta"
+  ],
+  "properties": {
+    "source_file": { "type": ["string", "null"] },
+    "project_name": { "$ref": "#/$defs/stringField" },
+    "contract_number": { "$ref": "#/$defs/stringField" },
+    "change_order_number": { "$ref": "#/$defs/stringField" },
+    "date": {
+      "$ref": "#/$defs/field",
+      "properties": {
+        "value": { "type": ["string", "null"], "format": "date", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+      },
+      "description": "Date the change order was issued, ISO 8601."
+    },
+    "requested_by": { "$ref": "#/$defs/stringField" },
+    "description": { "$ref": "#/$defs/stringField" },
+    "amount": {
+      "$ref": "#/$defs/field",
+      "properties": {
+        "value": { "type": ["number", "null"], "minimum": -100000000, "maximum": 100000000 }
+      },
+      "description": "Net change to the contract sum. Increase positive, decrease/credit negative."
+    },
+    "schedule_impact_days": {
+      "$ref": "#/$defs/field",
+      "properties": {
+        "value": { "type": ["integer", "null"], "minimum": -365, "maximum": 730 }
+      },
+      "description": "Net change to contract time in days. Extension positive, reduction negative."
+    },
+    "approval_status": {
+      "$ref": "#/$defs/field",
+      "properties": {
+        "value": { "enum": ["approved", "pending", "rejected", null] }
+      }
+    },
+    "needs_review": { "type": "boolean" },
+    "review_reasons": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Human-readable reasons needs_review is true; empty when false."
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "pipeline_version": { "type": "string" },
+        "mode": { "enum": ["llm", "offline", "llm_failed_fallback"] },
+        "provider": { "enum": ["openai", "anthropic", null] },
+        "model": { "type": ["string", "null"] },
+        "samples": { "type": "integer", "minimum": 0 },
+        "ingest": { "type": ["string", "null"] },
+        "chars": { "type": "integer", "minimum": 0 },
+        "review_threshold": { "type": "number" }
+      }
+    }
+  },
+  "$defs": {
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "source": {
+      "description": "Evidence span in the extracted document text (character offsets).",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["quote", "page", "start", "end", "match"],
+          "properties": {
+            "quote": { "type": "string" },
+            "page": { "type": "integer", "minimum": 1, "description": "1-based page of the evidence" },
+            "start": { "type": "integer", "minimum": 0 },
+            "end": { "type": "integer", "minimum": 0 },
+            "match": { "enum": ["exact", "fuzzy"] }
+          }
+        }
+      ]
+    },
+    "field": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "confidence", "source"],
+      "properties": {
+        "value": true,
+        "confidence": { "$ref": "#/$defs/confidence" },
+        "source": { "$ref": "#/$defs/source" }
+      }
+    },
+    "stringField": {
+      "$ref": "#/$defs/field",
+      "properties": {
+        "value": { "type": ["string", "null"], "minLength": 1 }
+      }
+    }
+  }
+}

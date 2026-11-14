@@ -1,0 +1,114 @@
+{
+  "source_file": "samples/synthetic/co_02_credit_pending.txt",
+  "project_name": {
+    "value": "Lakeview Elementary School - Phase 2 Modernization",
+    "confidence": 1.0,
+    "source": {
+      "quote": "Project:  Lakeview Elementary School - Phase 2 Modernization",
+      "page": 1,
+      "start": 53,
+      "end": 113,
+      "match": "exact"
+    }
+  },
+  "contract_number": {
+    "value": "LV-ELEC-0392",
+    "confidence": 1.0,
+    "source": {
+      "quote": "Subcontract #: LV-ELEC-0392",
+      "page": 1,
+      "start": 114,
+      "end": 141,
+      "match": "exact"
+    }
+  },
+  "change_order_number": {
+    "value": "17",
+    "confidence": 1.0,
+    "source": {
+      "quote": "COR No.  17",
+      "page": 1,
+      "start": 142,
+      "end": 153,
+      "match": "exact"
+    }
+  },
+  "date": {
+    "value": "2025-07-02",
+    "confidence": 1.0,
+    "source": {
+      "quote": "Date issued: 7/2/2025",
+      "page": 1,
+      "start": 154,
+      "end": 175,
+      "match": "exact"
+    }
+  },
+  "requested_by": {
+    "value": "Owner (via Bulletin 6)",
+    "confidence": 0.7,
+    "source": {
+      "quote": "Per owner direction (Bulletin 6)",
+      "page": 1,
+      "start": 263,
+      "end": 295,
+      "match": "exact"
+    }
+  },
+  "description": {
+    "value": "Delete the auditorium dimming system and replace it with standard switching, with credit for returned material less a 15% restocking fee.",
+    "confidence": 1.0,
+    "source": {
+      "quote": "delete the auditorium dimming system and\nreplace with standard switching",
+      "page": 1,
+      "start": 297,
+      "end": 369,
+      "match": "exact"
+    }
+  },
+  "amount": {
+    "value": -10630.0,
+    "confidence": 1.0,
+    "source": {
+      "quote": "TOTAL CREDIT THIS COR                                 ($10,630.00)",
+      "page": 1,
+      "start": 851,
+      "end": 917,
+      "match": "exact"
+    }
+  },
+  "schedule_impact_days": {
+    "value": -3,
+    "confidence": 1.0,
+    "source": {
+      "quote": "contract time decreased by 3 working days",
+      "page": 1,
+      "start": 967,
+      "end": 1008,
+      "match": "exact"
+    }
+  },
+  "approval_status": {
+    "value": "pending",
+    "confidence": 1.0,
+    "source": {
+      "quote": "Status: SUBMITTED - awaiting GC / Owner approval",
+      "page": 1,
+      "start": 1011,
+      "end": 1059,
+      "match": "exact"
+    }
+  },
+  "needs_review": false,
+  "review_reasons": [],
+  "meta": {
+    "pipeline_version": "0.1.0",
+    "mode": "llm",
+    "provider": "anthropic",
+    "model": "claude-opus-5-5",
+    "samples": 3,
+    "ingest": "text",
+    "chars": 1109,
+    "review_threshold": 0.6
+  }
+}

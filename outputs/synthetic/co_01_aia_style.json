@@ -1,0 +1,114 @@
+{
+  "source_file": "samples/synthetic/co_01_aia_style.txt",
+  "project_name": {
+    "value": "Riverside Medical Office Building",
+    "confidence": 1.0,
+    "source": {
+      "quote": "PROJECT: Riverside Medical Office Building",
+      "page": 1,
+      "start": 64,
+      "end": 106,
+      "match": "exact"
+    }
+  },
+  "contract_number": {
+    "value": "RMOB-2024-117",
+    "confidence": 1.0,
+    "source": {
+      "quote": "CONTRACT NO.: RMOB-2024-117",
+      "page": 1,
+      "start": 269,
+      "end": 296,
+      "match": "exact"
+    }
+  },
+  "change_order_number": {
+    "value": "004",
+    "confidence": 1.0,
+    "source": {
+      "quote": "CHANGE ORDER NUMBER: 004",
+      "page": 1,
+      "start": 117,
+      "end": 141,
+      "match": "exact"
+    }
+  },
+  "date": {
+    "value": "2025-03-12",
+    "confidence": 1.0,
+    "source": {
+      "quote": "DATE: March 12, 2025",
+      "page": 1,
+      "start": 195,
+      "end": 215,
+      "match": "exact"
+    }
+  },
+  "requested_by": {
+    "value": "Owner (Riverside Health Partners)",
+    "confidence": 1.0,
+    "source": {
+      "quote": "Requested by Owner (Riverside Health Partners) via RFI-031.",
+      "page": 1,
+      "start": 454,
+      "end": 513,
+      "match": "exact"
+    }
+  },
+  "description": {
+    "value": "Furnish and install upgraded LED fixtures in corridors 2A-2F per ASI-09, including additional circuiting at panel LP-2.",
+    "confidence": 1.0,
+    "source": {
+      "quote": "Furnish and install upgraded LED fixtures in corridors 2A-2F per ASI-09, including",
+      "page": 1,
+      "start": 334,
+      "end": 416,
+      "match": "exact"
+    }
+  },
+  "amount": {
+    "value": 18740.0,
+    "confidence": 1.0,
+    "source": {
+      "quote": "The Contract Sum will be increased by this Change Order in the amount of $ 18,740.00",
+      "page": 1,
+      "start": 722,
+      "end": 806,
+      "match": "exact"
+    }
+  },
+  "schedule_impact_days": {
+    "value": 5,
+    "confidence": 1.0,
+    "source": {
+      "quote": "The Contract Time will be increased by Five (5) days.",
+      "page": 1,
+      "start": 878,
+      "end": 931,
+      "match": "exact"
+    }
+  },
+  "approval_status": {
+    "value": "approved",
+    "confidence": 0.9,
+    "source": {
+      "quote": "By: /s/ L. Grant",
+      "page": 1,
+      "start": 1258,
+      "end": 1274,
+      "match": "exact"
+    }
+  },
+  "needs_review": false,
+  "review_reasons": [],
+  "meta": {
+    "pipeline_version": "0.1.0",
+    "mode": "llm",
+    "provider": "anthropic",
+    "model": "claude-opus-5-5",
+    "samples": 3,
+    "ingest": "text",
+    "chars": 1355,
+    "review_threshold": 0.6
+  }
+}

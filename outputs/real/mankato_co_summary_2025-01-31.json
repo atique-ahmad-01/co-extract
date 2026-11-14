@@ -1,0 +1,69 @@
+{
+  "source_file": "samples/real/mankato_co_summary_2025-01-31.pdf",
+  "project_name": {
+    "value": "WRRF - Disinfection and Digester Project",
+    "confidence": 0.9,
+    "source": {
+      "quote": "WRRF - Disinfection and Digester Project",
+      "page": 1,
+      "start": 28,
+      "end": 68,
+      "match": "exact"
+    }
+  },
+  "contract_number": {
+    "value": null,
+    "confidence": 0.9,
+    "source": null
+  },
+  "change_order_number": {
+    "value": null,
+    "confidence": 0.45,
+    "source": null
+  },
+  "date": {
+    "value": null,
+    "confidence": 0.9,
+    "source": null
+  },
+  "requested_by": {
+    "value": null,
+    "confidence": 0.9,
+    "source": null
+  },
+  "description": {
+    "value": null,
+    "confidence": 0.9,
+    "source": null
+  },
+  "amount": {
+    "value": null,
+    "confidence": 0.45,
+    "source": null
+  },
+  "schedule_impact_days": {
+    "value": null,
+    "confidence": 0.9,
+    "source": null
+  },
+  "approval_status": {
+    "value": null,
+    "confidence": 0.9,
+    "source": null
+  },
+  "needs_review": true,
+  "review_reasons": [
+    "change_order_number: required field missing",
+    "amount: required field missing"
+  ],
+  "meta": {
+    "pipeline_version": "0.1.0",
+    "mode": "llm",
+    "provider": "anthropic",
+    "model": "claude-opus-5-5",
+    "samples": 3,
+    "ingest": "pdf_text",
+    "chars": 2782,
+    "review_threshold": 0.6
+  }
+}

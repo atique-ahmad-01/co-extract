@@ -1,0 +1,115 @@
+{
+  "source_file": "samples/real/billings_wo15-10_co8.pdf",
+  "project_name": {
+    "value": "WTP Chemical Building/Disinfection Improvements",
+    "confidence": 0.85,
+    "source": {
+      "quote": "Project: WTP Chemical Building/Disinfection Improvements",
+      "page": 1,
+      "start": 280,
+      "end": 336,
+      "match": "exact"
+    }
+  },
+  "contract_number": {
+    "value": "W.O. 15-10",
+    "confidence": 0.595,
+    "source": {
+      "quote": "OWNER's Contract No. W.O. 15-10",
+      "page": 1,
+      "start": 345,
+      "end": 376,
+      "match": "exact"
+    }
+  },
+  "change_order_number": {
+    "value": "8",
+    "confidence": 0.85,
+    "source": {
+      "quote": "No. Eight (8)",
+      "page": 1,
+      "start": 76,
+      "end": 89,
+      "match": "exact"
+    }
+  },
+  "date": {
+    "value": "2016-12-29",
+    "confidence": 0.595,
+    "source": {
+      "quote": "DATE OF ISSUANCE December 29, 2016",
+      "page": 1,
+      "start": 99,
+      "end": 133,
+      "match": "exact"
+    }
+  },
+  "requested_by": {
+    "value": null,
+    "confidence": 0.35,
+    "source": null
+  },
+  "description": {
+    "value": "Combines CPRs 20, 30 and 31: credit to delete the Chemical Building window sunshades, reroute the conflicting 8-inch sanitary sewer with bypass pumping, and revise the FW pipe tie-in routing and shoring near the existing 36-inch and 6-inch PW pipes.",
+    "confidence": 0.85,
+    "source": {
+      "quote": "See attached CPR’s (Change Proposal Request’s) No. 20, No. 30, No. 31",
+      "page": 1,
+      "start": 566,
+      "end": 635,
+      "match": "exact"
+    }
+  },
+  "amount": {
+    "value": 60668.46,
+    "confidence": 0.595,
+    "source": {
+      "quote": "$  60,668.46",
+      "page": 1,
+      "start": 2205,
+      "end": 2217,
+      "match": "exact"
+    }
+  },
+  "schedule_impact_days": {
+    "value": 6,
+    "confidence": 0.595,
+    "source": {
+      "quote": "Substantial Completion: 6 Calendar Days",
+      "page": 1,
+      "start": 2155,
+      "end": 2194,
+      "match": "exact"
+    }
+  },
+  "approval_status": {
+    "value": "pending",
+    "confidence": 0.459,
+    "source": {
+      "quote": "OWNER (Authorized Signature)",
+      "page": 1,
+      "start": 2814,
+      "end": 2842,
+      "match": "exact"
+    }
+  },
+  "needs_review": true,
+  "review_reasons": [
+    "requested_by: extractor returned null but a pattern match found 'Engineer Contractor'",
+    "contract_number: low confidence (0.59)",
+    "date: low confidence (0.59)",
+    "amount: low confidence (0.59)",
+    "schedule_impact_days: low confidence (0.59)",
+    "approval_status: low confidence (0.46)"
+  ],
+  "meta": {
+    "pipeline_version": "0.1.0",
+    "mode": "llm",
+    "provider": "anthropic",
+    "model": "claude-opus-5-5",
+    "samples": 3,
+    "ingest": "pdf_text+vision",
+    "chars": 35540,
+    "review_threshold": 0.6
+  }
+}

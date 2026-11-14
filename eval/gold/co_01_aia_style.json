@@ -1,0 +1,14 @@
+{
+  "file": "samples/synthetic/co_01_aia_style.txt",
+  "expected": {
+    "project_name": "Riverside Medical Office Building",
+    "contract_number": "RMOB-2024-117",
+    "change_order_number": "004",
+    "date": "2025-03-12",
+    "requested_by": ["Riverside Health Partners", "Owner (Riverside Health Partners)"],
+    "description": "upgraded LED fixtures corridors 2A-2F ASI-09 circuiting panel LP-2",
+    "amount": 18740.00,
+    "schedule_impact_days": 5,
+    "approval_status": "approved"
+  }
+}

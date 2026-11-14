@@ -1,0 +1,118 @@
+{
+  "source_file": "samples/synthetic/co_03_ocr_noisy.txt",
+  "project_name": {
+    "value": "Harbor Point Apartments Bldg C",
+    "confidence": 0.9,
+    "source": {
+      "quote": "Proj ect : Harbor P0int Apartments  Bldg C",
+      "page": 1,
+      "start": 13,
+      "end": 55,
+      "match": "exact"
+    }
+  },
+  "contract_number": {
+    "value": "HPA-22-0518",
+    "confidence": 0.9,
+    "source": {
+      "quote": "Contract N o. HPA-22-0518",
+      "page": 1,
+      "start": 56,
+      "end": 81,
+      "match": "exact"
+    }
+  },
+  "change_order_number": {
+    "value": "CO-09",
+    "confidence": 1.0,
+    "source": {
+      "quote": "Change Order No: C0-09",
+      "page": 1,
+      "start": 98,
+      "end": 120,
+      "match": "exact"
+    }
+  },
+  "date": {
+    "value": "2024-11-04",
+    "confidence": 0.54,
+    "source": {
+      "quote": "Date: 1l/04/2024",
+      "page": 1,
+      "start": 121,
+      "end": 137,
+      "match": "exact"
+    }
+  },
+  "requested_by": {
+    "value": "Coastal Living Partners LLC (Owner)",
+    "confidence": 1.0,
+    "source": {
+      "quote": "Requested by: Coastal Living Partners LLC (0wner)",
+      "page": 1,
+      "start": 139,
+      "end": 188,
+      "match": "exact"
+    }
+  },
+  "description": {
+    "value": "Replace damaged sheathing (approx. 1,150 SF) at the north elevation, discovered after removal of existing siding, on a T&M not-to-exceed basis.",
+    "confidence": 1.0,
+    "source": {
+      "quote": "Rep1ace damaged sheathing at north elevation discovered",
+      "page": 1,
+      "start": 204,
+      "end": 259,
+      "match": "exact"
+    }
+  },
+  "amount": {
+    "value": 8410.0,
+    "confidence": 0.54,
+    "source": {
+      "quote": "Arnount of this change: $ 8,4l0.00",
+      "page": 1,
+      "start": 331,
+      "end": 365,
+      "match": "exact"
+    }
+  },
+  "schedule_impact_days": {
+    "value": 0,
+    "confidence": 0.9,
+    "source": {
+      "quote": "Contract tirne: no change.",
+      "page": 1,
+      "start": 366,
+      "end": 392,
+      "match": "exact"
+    }
+  },
+  "approval_status": {
+    "value": "approved",
+    "confidence": 0.54,
+    "source": {
+      "quote": "App roved by Owner: M. Alvarez   11/O6/2024",
+      "page": 1,
+      "start": 394,
+      "end": 437,
+      "match": "exact"
+    }
+  },
+  "needs_review": true,
+  "review_reasons": [
+    "date: low confidence (0.54)",
+    "amount: low confidence (0.54)",
+    "approval_status: low confidence (0.54)"
+  ],
+  "meta": {
+    "pipeline_version": "0.1.0",
+    "mode": "llm",
+    "provider": "anthropic",
+    "model": "claude-opus-5-5",
+    "samples": 3,
+    "ingest": "text",
+    "chars": 437,
+    "review_threshold": 0.6
+  }
+}

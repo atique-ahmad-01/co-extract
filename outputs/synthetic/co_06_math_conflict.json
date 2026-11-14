@@ -1,0 +1,116 @@
+{
+  "source_file": "samples/synthetic/co_06_math_conflict.txt",
+  "project_name": {
+    "value": "Mesa Verde Parking Structure",
+    "confidence": 1.0,
+    "source": {
+      "quote": "Job: Mesa Verde Parking Structure",
+      "page": 1,
+      "start": 102,
+      "end": 135,
+      "match": "exact"
+    }
+  },
+  "contract_number": {
+    "value": "MV-PS-7781",
+    "confidence": 1.0,
+    "source": {
+      "quote": "Contract: Prime Agreement No. MV-PS-7781",
+      "page": 1,
+      "start": 150,
+      "end": 190,
+      "match": "exact"
+    }
+  },
+  "change_order_number": {
+    "value": "GP-1187-CO-03",
+    "confidence": 1.0,
+    "source": {
+      "quote": "CO No.: GP-1187-CO-03",
+      "page": 1,
+      "start": 80,
+      "end": 101,
+      "match": "exact"
+    }
+  },
+  "date": {
+    "value": "2025-03-04",
+    "confidence": 1.0,
+    "source": {
+      "quote": "Date: 03/04/2025",
+      "page": 1,
+      "start": 191,
+      "end": 207,
+      "match": "exact"
+    }
+  },
+  "requested_by": {
+    "value": "City of Mesa Verde Public Works (Owner)",
+    "confidence": 1.0,
+    "source": {
+      "quote": "Change requested by: City of Mesa Verde Public Works (Owner)",
+      "page": 1,
+      "start": 209,
+      "end": 269,
+      "match": "exact"
+    }
+  },
+  "description": {
+    "value": "Add 14 EV charging stub-outs on Level 2, including conduit, pull boxes and two 400A feeder extensions from MSB-1; chargers are excluded (by Owner).",
+    "confidence": 1.0,
+    "source": {
+      "quote": "Add 14 EV charging stub-outs on Level 2 including conduit, pull boxes,",
+      "page": 1,
+      "start": 284,
+      "end": 354,
+      "match": "exact"
+    }
+  },
+  "amount": {
+    "value": 146250.0,
+    "confidence": 0.5,
+    "source": {
+      "quote": "This change order:                       $    146,250.00",
+      "page": 1,
+      "start": 600,
+      "end": 656,
+      "match": "exact"
+    }
+  },
+  "schedule_impact_days": {
+    "value": 7,
+    "confidence": 1.0,
+    "source": {
+      "quote": "Time: +7 calendar days",
+      "page": 1,
+      "start": 715,
+      "end": 737,
+      "match": "exact"
+    }
+  },
+  "approval_status": {
+    "value": "pending",
+    "confidence": 0.9,
+    "source": {
+      "quote": "Owner:      City of Mesa Verde          Signed: ______________   Date: ________",
+      "page": 1,
+      "start": 816,
+      "end": 895,
+      "match": "exact"
+    }
+  },
+  "needs_review": true,
+  "review_reasons": [
+    "amount: contract math: prior 19,112,400.00 + change 146,250.00 != new 19,285,650.00 (implied change 173,250.00)"
+  ],
+  "meta": {
+    "pipeline_version": "0.1.0",
+    "mode": "llm",
+    "provider": "anthropic",
+    "model": "claude-opus-5-5",
+    "samples": 3,
+    "ingest": "text",
+    "chars": 895,
+    "review_threshold": 0.6
+  }
+}

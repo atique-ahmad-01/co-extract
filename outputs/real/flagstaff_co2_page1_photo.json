@@ -1,0 +1,104 @@
+{
+  "source_file": "samples/real/flagstaff_co2_page1_photo.jpg",
+  "project_name": {
+    "value": "Beulah/University Realignment Project",
+    "confidence": 0.765,
+    "source": {
+      "quote": "PROJECT NAME:   Beulah/University Realignment Project",
+      "page": 1,
+      "start": 233,
+      "end": 286,
+      "match": "exact"
+    }
+  },
+  "contract_number": {
+    "value": "23-003132",
+    "confidence": 0.85,
+    "source": {
+      "quote": "Purchase Order Number: 23-003132",
+      "page": 1,
+      "start": 385,
+      "end": 417,
+      "match": "exact"
+    }
+  },
+  "change_order_number": {
+    "value": "2",
+    "confidence": 0.85,
+    "source": {
+      "quote": "CONSTRUCTION CONTRACT CHANGE ORDER NO.   2",
+      "page": 1,
+      "start": 135,
+      "end": 177,
+      "match": "exact"
+    }
+  },
+  "date": {
+    "value": null,
+    "confidence": 0.9,
+    "source": null
+  },
+  "requested_by": {
+    "value": "City of Flagstaff",
+    "confidence": 0.85,
+    "source": {
+      "quote": "Change Order originated by:   ☑CITY OF FLAGSTAFF",
+      "page": 1,
+      "start": 461,
+      "end": 509,
+      "match": "exact"
+    }
+  },
+  "description": {
+    "value": "Eight-component scope change including Wendy's driveway and Fresquez Avenue paving, University Avenue drainage/storm drain and sidewalk fixes, Burger King driveway and ADA ramp modifications, dead tree removal, temp striping, bollards at Yale/Fresquez, and stair modifications on Yale Street.",
+    "confidence": 0.85,
+    "source": {
+      "quote": "This Change Order has eight (8) components to the scope of work.",
+      "page": 1,
+      "start": 584,
+      "end": 648,
+      "match": "exact"
+    }
+  },
+  "amount": {
+    "value": 390173.15,
+    "confidence": 0.595,
+    "source": {
+      "quote": "The cost of this Change Order request is $390,173.15.",
+      "page": 1,
+      "start": 2534,
+      "end": 2587,
+      "match": "exact"
+    }
+  },
+  "schedule_impact_days": {
+    "value": 20,
+    "confidence": 0.765,
+    "source": {
+      "quote": "This Change Order will add 20 calendar days to the contract period.",
+      "page": 1,
+      "start": 2365,
+      "end": 2432,
+      "match": "exact"
+    }
+  },
+  "approval_status": {
+    "value": null,
+    "confidence": 0.9,
+    "source": null
+  },
+  "needs_review": true,
+  "review_reasons": [
+    "amount: low confidence (0.59)"
+  ],
+  "meta": {
+    "pipeline_version": "0.1.0",
+    "mode": "llm",
+    "provider": "anthropic",
+    "model": "claude-opus-5-5",
+    "samples": 3,
+    "ingest": "vision",
+    "chars": 2925,
+    "review_threshold": 0.6
+  }
+}

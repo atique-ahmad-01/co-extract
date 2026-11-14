@@ -1,0 +1,18 @@
+OWNER CHANGE DIRECTIVE / CHANGE ORDER LOG ENTRY
+=================================================
+Project ........ Cedar Ridge Library Expansion
+Owner Contract . CRL-GC-2023-04
+CO # ........... 11  (supersedes PCO 11-R1)
+Dated .......... 2025-05-20
+Initiated by ... Fenwick Studio (Architect) - ASI-22
+
+Scope: Revise reading room skylight framing from aluminum to steel per
+structural review; includes revised shop drawings and re-fabrication.
+
+Pricing summary
+  PCO 11-R1 (original proposal, withdrawn) ..... $ 46,300.00
+  CO 11 (negotiated) ........................... $ 39,875.00
+
+Schedule impact: two (2) weeks extension to Milestone 3.
+
+Owner decision: REJECTED 05/28/2025 - exceeds contingency; resubmit with alternate.

@@ -1,0 +1,26 @@
+NORTHSHORE ELECTRIC, LLC
+Change Order Request (COR)
+
+Project:  Lakeview Elementary School - Phase 2 Modernization
+Subcontract #: LV-ELEC-0392
+COR No.  17
+Date issued: 7/2/2025
+Submitted by: Jenna Ruiz, Project Manager, Northshore Electric
+
+Description of change:
+Per owner direction (Bulletin 6), delete the auditorium dimming system and
+replace with standard switching. Credit includes material returned to supplier
+less 15% restocking fee.
+
+  Item                                  Qty     Unit       Ext.
+  Dimming panel DP-1 (delete)            1     (14,200)   (14,200.00)
+  Wall stations (delete)                 6     (420)      (2,520.00)
+  Std. switching & devices (add)         1     3,960      3,960.00
+  Restocking fee 15%                                       2,130.00
+                                                         ----------
+  TOTAL CREDIT THIS COR                                 ($10,630.00)
+
+Schedule: Reduces electrical rough-in duration; contract time decreased by 3 working days.
+
+Status: SUBMITTED - awaiting GC / Owner approval
+Approved: ____________________   Date: __________
