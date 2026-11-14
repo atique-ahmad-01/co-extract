@@ -7,6 +7,11 @@ If something looks wrong, `needs_review` is `true`.
 The JSON Schema is in `schema/change_order.schema.json`, and the outputs for the sample
 documents are in `outputs/`.
 
+## Demo
+
+[Watch the demo video](docs/demo.mp4) (49 seconds): uploading a PDF, an auto-accepted
+change order, and one sent to review because its contract math doesn't add up.
+
 ## Setup
 
 ```bash

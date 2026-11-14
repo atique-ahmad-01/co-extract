@@ -87,12 +87,18 @@ def highlight(text: str, result: dict, threshold: float) -> str:
     for start, end, i, name, conf in spans:
         if start < pos:
             continue
-        out.append(html.escape(text[pos:start]))
+        out.append(_escape(text[pos:start]))
         out.append(f'<mark class="{conf_class(conf, threshold)}" title="{LABELS[name]} · {conf:.2f}">'
-                   f'{html.escape(text[start:end])}<sup>{i}</sup></mark>')
+                   f'{_escape(text[start:end])}<sup>{i}</sup></mark>')
         pos = end
-    out.append(html.escape(text[pos:]))
-    return '<div class="doc">' + "".join(out).replace("\f", "\n──── page break ────\n") + "</div>"
+    out.append(_escape(text[pos:]))
+    return '<div class="doc">' + "".join(out) + "</div>"
+
+
+def _escape(s: str) -> str:
+    # Spaces and newlines as entities, so Markdown can't turn indented lines into code blocks.
+    s = html.escape(s.replace("\f", "\n──── page break ────\n"))
+    return s.replace(" ", "&#32;").replace("\n", "&#10;")
 
 
 @st.cache_resource(show_spinner=False)
